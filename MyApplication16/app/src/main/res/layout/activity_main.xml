@@ -11,7 +11,7 @@
         android:id="@+id/surfaceView1"
         android:layout_width="378dp"
         android:layout_height="632dp"
-        tools:layout_editor_absoluteY="-18dp"
+        tools:layout_editor_absoluteY="-16dp"
         tools:layout_editor_absoluteX="3dp">
     </SurfaceView>
 
@@ -20,23 +20,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="start"
-        tools:layout_editor_absoluteY="458dp"
-        android:layout_marginRight="-3dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_stop"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="458dp"
+        android:layout_marginStart="8dp" />
 
     <Button
         android:id="@+id/btn_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="stop"
-        tools:layout_editor_absoluteY="458dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.01" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="458dp" />
     <ImageView
         android:id="@+id/compass_imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/testp" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ttt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

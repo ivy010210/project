@@ -124,25 +124,32 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
     public void onSensorChanged(SensorEvent event) {
         if (event.sensor.getType() == Sensor.TYPE_ORIENTATION) {
             float degree = event.values[0];
+            //float degree1 = event.values[1];
+            //float degree2 = event.values[2];
 
-            if (degree <= 15 || degree>=345){
 
+
+            if (degree <=15 || degree>=345){
+                //if (degree1 <=10&&degree1>=-5){
+                    //if(degree2 <= 10&&degree2>=-5){
                 imageView.setVisibility(View.VISIBLE);
-                //if(degree<=15&&degree>=0){
-                    //Animation am = new TranslateAnimation(0, -20, 0, 0 );
-                    //am.setDuration( 300 );
-                    //imageView.setAnimation(am);
-                    //imageView.layout((int) (imageView.getLeft()+degree*5), imageView.getTop(), (int) (imageView.getRight()-degree*5), imageView.getBottom());
-               // }
+
+                //動畫
+//                if(degree<=15&&degree>=0){
+//                    Animation am = new TranslateAnimation(0, -400, 0, 0 );
+//                    am.setDuration( 200 );
+//                    imageView.setAnimation(am);
+//                    //imageView.layout((int) (imageView.getLeft()+degree*5), imageView.getTop(), (int) (imageView.getRight()-degree*5), imageView.getBottom());
+//                }
 //                else{
-//                    Animation am = new TranslateAnimation(0, 20, 0, 0 );
-//                    am.setDuration( 300 );
+//                    Animation am = new TranslateAnimation(0, 400, 0, 0 );
+//                    am.setDuration( 200 );
 //                    imageView.setAnimation(am);
 //
 //                }
 
 
-            }
+            }//}}
             else {
                 imageView.setVisibility(View.INVISIBLE);
             }
